@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import Layout from "@/components/Layout";
+import profilePic from "../public/images/profile/developer-pic-1.png";
+import Image from "next/image";
+import AnimatedText from "@/components/AnimatedText";
+import Link from "next/link";
+import { LinkArrow } from "@/components/Icons";
 
 
 const montserrat = Montserrat({
@@ -26,6 +32,10 @@ export default function RootLayout({
     <html lang="en" className={`${montserrat.variable} font-mont bg-light w-full min-h`}>
       
     <body>{children}
+
+  
+
+    
     </body>
   </html>
   );
