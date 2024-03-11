@@ -5,6 +5,8 @@ import profilePic from '../public/images/profile/developer-pic-1.png'
 import AnimatedText from './AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from './Icons'
+
+
 const Main = () => {
   return (
     <main className="flex items-center text-dark w-full min-h-screen" >
@@ -34,6 +36,8 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
         </div>
       </div>
     </Layout>
+
+    
 
 
 

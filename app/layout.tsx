@@ -7,8 +7,13 @@ import profilePic from "../public/images/profile/developer-pic-1.png";
 import Image from "next/image";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "@/components/Icons";
-
+import { LinkArrow } from "@/components/Icons"
+import Navbar from "@/components/Navbar";
+import Main from "@/components/Main";
+import HireMe from "@/components/HireMe";
+import Skills from "@/pages/Skills";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -33,7 +38,12 @@ export default function RootLayout({
       
     <body>{children}
 
-  
+    <Navbar/>
+       <Main/>
+       <HireMe/>
+       <Skills/>
+       <Projects/>
+       <Footer/>
 
     
     </body>
