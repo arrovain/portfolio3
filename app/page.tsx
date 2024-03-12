@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Main from "@/components/Main";
 import HireMe from "@/components/HireMe";
 import About from "@/components/About";
-import Skills from "@/pages/Skills";
+import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 
 

@@ -11,7 +11,7 @@ import { LinkArrow } from "@/components/Icons"
 import Navbar from "@/components/Navbar";
 import Main from "@/components/Main";
 import HireMe from "@/components/HireMe";
-import Skills from "@/pages/Skills";
+import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 

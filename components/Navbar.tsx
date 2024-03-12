@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 import { GithubIcon, LinkedInIcon } from './Icons';
 import {motion} from 'framer-motion'
 import Main from './Main';
-import Skills from '../pages/Skills';
+import Skills from './Skills';
 import Projects from './Projects';
 
 
