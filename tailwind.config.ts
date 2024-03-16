@@ -23,8 +23,8 @@ const config: Config = {
            primary: "#B63E96", // 240,86,199
            primaryDark: "#58E6D9", // 80,230,217
        },
-       animations: {
-         'spin-slow': 'spin 8s linear infinite',
+       animation: {
+         'spin': 'spin 3s linear infinite',
      
      },
      backgroundImage: {
@@ -33,6 +33,25 @@ const config: Config = {
      
     
   },
+ 
+screens: {
+  "2xl": { max: "1535px" },
+ 
+
+  xl: { max: "1279px" },
+  
+
+  lg: { max: "1023px" },
+
+
+  md: { max: "767px" },
+
+
+  sm: { max: "639px" },
+
+  xs: { max: "479px" },
+
+},
 }
 }
 export default config;

@@ -2,6 +2,8 @@
 
 import React from 'react'
 import { motion } from "framer-motion"
+import '../app/globals.css'
+
 
 
 const Skill = ({name, x, y}) => {

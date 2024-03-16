@@ -1,10 +1,12 @@
 import React from 'react'
-import Layout from './Layout'
+import Layout from '../components/Layout'
 import Image from 'next/image'
 import profilePic from '../public/images/profile/developer-pic-1.png'
-import AnimatedText from './AnimatedText'
+import AnimatedText from '../components/AnimatedText'
 import Link from 'next/link'
-import { LinkArrow } from './Icons'
+import { LinkArrow } from '../components/Icons'
+import '../app/globals.css'
+
 
 
 const Main = () => {
@@ -13,15 +15,16 @@ const Main = () => {
     <Layout className="pt-0">
       <div className="div flex items-center justifiy-between w-full">
         <div className="w-1/2">
-          <Image src={profilePic} alt='s' className='w-full h-auto' />
+          <Image src={profilePic} alt='s' className='w-full h-auto'
+          priority sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' />
         </div>
         <div className="w-1/2 flex flex-col items-center self-center">
           <h1>
             <AnimatedText text='Turning Vision Into Reality With Code And Design.' className="!text-6xl !text-left"  />
 
             <p className=" my-4 text-base font-medium">
-             As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+             As a skilled front-end developer, I am dedicated to turning ideas into innovative web applications. 
+Explore my latest projects, showcasing my expertise in React.js and web development.
 
             </p>
             <div className="flex items-center self-start mt-2 ">

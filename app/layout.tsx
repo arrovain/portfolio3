@@ -9,10 +9,10 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons"
 import Navbar from "@/components/Navbar";
-import Main from "@/components/Main";
+import Main from "@/pages/Main";
 import HireMe from "@/components/HireMe";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
+import Skills from "@/pages/Skills";
+import Projects from "@/pages/Projects";
 import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
@@ -37,10 +37,13 @@ export default function RootLayout({
     <html lang="en" className={`${montserrat.variable} font-mont bg-light w-full min-h`}>
       
     <body>{children}
-
     <Navbar/>
        <Main/>
        <HireMe/>
+      
+    
+      
+       
        <Skills/>
        <Projects/>
        <Footer/>

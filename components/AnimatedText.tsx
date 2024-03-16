@@ -1,5 +1,5 @@
 'use client'
-import Main from './Main'
+import Main from '../pages/Main'
 import React from 'react'
 import {motion} from 'framer-motion'
 

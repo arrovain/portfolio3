@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import React from 'react'
-import Layout from './Layout'
-import AnimatedText from './AnimatedText'
+import Layout from '../components/Layout'
+import AnimatedText from '../components/AnimatedText'
 import Link from 'next/link'
 import Image from 'next/image'
-import { GithubIcon } from './Icons'
+import { GithubIcon } from '../components/Icons'
 import project1 from '../public/images/projects/crypto-screener-cover-image.jpg';
+import '../app/globals.css'
+
 
 
 const FeaturedProject = ({ type, title, summary, img, link, github}) =>{
