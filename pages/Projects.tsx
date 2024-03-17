@@ -16,7 +16,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github}) =>{
     
 
 
-  <article className='rounded-br-4xl top-0 -right-3 -z-10 w-[101%] h[103%] rounded-[2rem] bg-dark w-full flex items-center justify-center relative  border border-solid border-dark bg-light p-12 shadow-2xl'>
+  <article className='lg:grid lg:grid-cols xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0  lg:flex-col lg:p-3 xs:rounded-br-4xl  rounded-br-xl top-0 right-3 z-10 w-[101-%] h[103%] rounded-[2rem] bg-dark w-full flex items-center justify-center relative  border border-solid border-dark bg-light p-12 shadow-2xl'>
  
   
   
@@ -55,9 +55,9 @@ const Projects = () => {
 
     </Head>
 
-    <main className='w-full mb-16 flex flex-col items-center justify-center'>
+    <main className='w-full mb-16 flex flex-col items-center justify-center  '>
         <Layout className='pt-16'>
-            <AnimatedText text='My Projects
+            <AnimatedText className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'text='My Projects
             ' />
           <div className=' grid grid-cols-16 gap-24'>
             <div className=' col-span-12

@@ -4,15 +4,15 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className='w-full border-t-2 border-solid border-dark font-medium text-lg'>
-        <Layout className='py-8 flex items-center justify-between'>
-            <span
-            > {new Date().getFullYear()} </span>
-            <div  className='flex items-center underline underline-offset-2'>
+    <footer className='sm:text-base w-full border-t-2 border-solid border-dark font-medium text-lg'>
+        <Layout className='py-8 flex items-center justify-between lg:flex-col lg:py-6'>
+            <div className=' underline underline-offset-2 '
+            > {new Date().getFullYear()} </div>
+            <div  className='flex items-center underline underline-offset-2 lg:py-2'>
             Build With Nextjs</div>
             
           
-            <Link className='underline underline-offset-2' href='https://mahmuticme.vercel.app/'>Another Portolio</Link>
+            <div className='underline underline-offset-2' >Mahmut İÇME</div>
         </Layout>
     </footer>
   )
