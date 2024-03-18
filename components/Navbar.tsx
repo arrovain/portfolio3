@@ -36,11 +36,11 @@ const CustomMobileLink = ({ href, title, className="", toggle }:{ href:any, titl
   }
   
     return(
-      <button href={href} className={`${className} my-2 relative group text-light`} onClick={handleClick}>
+      <Link href={href} className={`${className} my-2 relative group text-light`} onClick={handleClick}>
         {title}
   <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5
         group-hover:w-full transition-[width] ease duration-300 ${router.push === href ? 'w-full' : 'w-0'} `}>&nbsp;</span>
-      </button>
+      </Link>
     )} 
 
 
