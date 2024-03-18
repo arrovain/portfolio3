@@ -30,7 +30,7 @@ const singelWord = {
     }
 }
 
-const AnimatedText = ({text, className=''}) => {
+const AnimatedText = ({text, className=''}:{text:any, className:any}) => {
   return (
     <div className=' w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0'>
     

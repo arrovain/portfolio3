@@ -61,10 +61,10 @@ const Projects = () => {
             ' />
           <div className=' grid grid-cols-16 gap-24'>
             <div className=' col-span-12
-            '><FeaturedProject  title='portfolio' img={project1} summary='this is portfolio' link='/' github='/' type='Featured Project'  />
+            '><FeaturedProject  title='...' img={project1} summary='this is project...' link='/' github='/' type=''  />
              
-             <FeaturedProject  title='portfolio' img={project1} summary='this is portfolio' link='/' github='/' type='Featured Project'  />
-             <FeaturedProject title='proje2' img={project1} summary='this is proje2' link='/' github='/'/>
+             <FeaturedProject  title='...' img={project1} summary='this is project...' link='/' github='/' type=''  />
+             <FeaturedProject title='...' img={project1} summary='this is proje...' link='/' github='/'/>
 
             </div>
           
