@@ -39,7 +39,7 @@ const AnimatedText = ({text, className=''}:{text:any, className:any}) => {
   
     >
 {
-    text.split(' ').map((word: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | MotionValue<number> | MotionValue<string> | null | undefined, index: string) => 
+    text.split(' ').map((word: any, index: any) => 
         <motion.span key={word+'-'+index} className='inline-block'
         variants={singelWord}
     initial='initial'
