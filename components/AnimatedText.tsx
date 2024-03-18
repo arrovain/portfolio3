@@ -1,7 +1,7 @@
 'use client'
 import Main from '../pages/Main'
 import React from 'react'
-import {motion} from 'framer-motion'
+import {MotionValue, motion} from 'framer-motion'
 
 
 const quote = {
@@ -39,7 +39,7 @@ const AnimatedText = ({text, className=''}:{text:any, className:any}) => {
   
     >
 {
-    text.split(' ').map((word, index) => 
+    text.split(' ').map((word: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | MotionValue<number> | MotionValue<string> | null | undefined, index: string) => 
         <motion.span key={word+'-'+index} className='inline-block'
         variants={singelWord}
     initial='initial'
