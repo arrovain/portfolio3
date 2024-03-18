@@ -10,7 +10,7 @@ import '../app/globals.css'
 
 
 
-const FeaturedProject = ({ type, title, summary, img, link, github}) =>{
+const FeaturedProject = ({ type, title, summary, img, link, github}:{ type:any, title:any, summary:any, img:any, link:any, github:any}) =>{
   return ( 
    
     
@@ -33,7 +33,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github}) =>{
     <p>{summary}</p>
   
     <div className='mt-2 flex items-center'>
-      <Link href={github} target='__blank' className='w-9'><GithubIcon/></Link>
+      <Link href={github} target='__blank' className='w-9'><GithubIcon className=''/></Link>
       <Link href={link} target='__blank' className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'>
         Visit Live </Link>
     
@@ -64,7 +64,7 @@ const Projects = () => {
             '><FeaturedProject  title='...' img={project1} summary='this is project...' link='/' github='/' type=''  />
              
              <FeaturedProject  title='...' img={project1} summary='this is project...' link='/' github='/' type=''  />
-             <FeaturedProject title='...' img={project1} summary='this is proje...' link='/' github='/'/>
+             <FeaturedProject title='...' img={project1} summary='this is proje...' link='/' github='/' type=''/>
 
             </div>
           

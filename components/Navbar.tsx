@@ -14,7 +14,7 @@ import Projects from '../pages/Projects';
 
 
 
-const CustomLink = ({href, title, className="" }) => {
+const CustomLink = ({href, title, className="" }:{href:any, title:any, className:any }) => {
   
 const router = useRouter();
 
@@ -27,7 +27,7 @@ const router = useRouter();
   )}
 
  
-const CustomMobileLink = ({ href, title, className="", toggle }) => {
+const CustomMobileLink = ({ href, title, className="", toggle }:{ href:any, title:any, className:any, toggle:any }) => {
   
   const router = useRouter();
   const handleClick = () => {
@@ -84,12 +84,12 @@ const Navbar = () => {
       <motion.a href="https://github.com/arrovain" target='__blank' whileHover={{y: -2}}
       whileTap={{scale:0.9}}
       className='w-6 mr-3  '>
-      <GithubIcon/>
+      <GithubIcon className=''/>
       </motion.a>
       <motion.a href="https://www.linkedin.com/in/mahmuticme/" target='__blank' whileHover={{y: -2}}
        whileTap={{scale:0.9}}
       className='w-6 ml-3'>
-      <LinkedInIcon/>
+      <LinkedInIcon className=''/>
       </motion.a>
     </nav>
     {
@@ -111,12 +111,12 @@ const Navbar = () => {
       <motion.a href="https://github.com/arrovain" target='__blank' whileHover={{y: -2}}
       whileTap={{scale:0.9}}
       className='bg-light rounded-full w-6 mr-3 sm:mx-1'>
-      <GithubIcon/>
+      <GithubIcon className=''/>
       </motion.a>
       <motion.a href="https://www.linkedin.com/in/mahmuticme/" target='__blank' whileHover={{y: -2}}
        whileTap={{scale:0.9}}
       className='w-6 ml-3 sm:mx-1'>
-      <LinkedInIcon/>
+      <LinkedInIcon className=''/>
       </motion.a>
     </nav>
     </motion.div> : null

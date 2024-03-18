@@ -6,7 +6,7 @@ import '../app/globals.css'
 
 
 
-const Skill = ({name, x, y}) => {
+const Skill = ({name, x, y}:{name:any, x:any, y:any}) => {
     return (
         
         <motion.div className='cursor-pointer absolute py-3 px-6 shadow-dark flex items-center justify-center rounded-full font-semibold bg-dark text-light'
