@@ -1,4 +1,4 @@
-A responsive portfolio website
+A responsive portfolio website(i didnt code "projects" section) [Live Here](https://nextjsmahmuticme.vercel.app/)
 
 Built With Nextjs, Typescript, Tailwind and FramerMotion
 
